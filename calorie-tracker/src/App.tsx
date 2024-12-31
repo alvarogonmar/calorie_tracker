@@ -1,3 +1,5 @@
+import Form from "./components/Form";
+
 function App() {
   return (
     <>
@@ -11,7 +13,7 @@ function App() {
 
       <section className="bg-lime-500 py-20 px-5">
         <div className="max-w-4xl mx-auto">
-          <p>"Form here"</p>
+          <Form />
         </div>
       </section>
     </>
