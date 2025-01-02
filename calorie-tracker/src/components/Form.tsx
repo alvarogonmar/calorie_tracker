@@ -1,6 +1,12 @@
+import { useState } from "react";
 import { categories } from "../data/categories";
 
 export default function Form() {
+  const [activity, setActivity] = useState({
+    category: " ",
+    name: " ",
+    calories: 0,
+  });
   return (
     <form className="space-y-5 bg-white shadow p-10 rounded-lg">
       <div className="grid grid-cols-1 gap-3">
@@ -20,11 +26,11 @@ export default function Form() {
       </div>
 
       <div className="grid grid-cols-1 gap-3">
-        <label htmlFor="activity" className="font-bold">
+        <label htmlFor="name" className="font-bold">
           Activity:
         </label>
         <input
-          id="activity"
+          id="name"
           type="text"
           className="border border-slate-300 p-2 rounded-lg"
           placeholder="E.g. Running, Walking, Orange Juice, Chicken, Salad."
