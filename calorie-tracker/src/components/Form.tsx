@@ -42,6 +42,12 @@ export default function Form() {
           placeholder="E.g. 100, 200, 300."
         />
       </div>
+
+      <input
+        type="submit"
+        className="bg-gray-800 hover:bg-gray-600 w-full p-2 font-bold uppercase text-white cursor-pointer"
+        value={"Save"}
+      />
     </form>
   );
 }
