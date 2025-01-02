@@ -23,7 +23,12 @@ export default function Form() {
         <label htmlFor="activity" className="font-bold">
           Activity:
         </label>
-        <input id="activity" type="text" />
+        <input
+          id="activity"
+          type="text"
+          className="border border-slate-300 p-2 rounded-lg"
+          placeholder="E.g. Running, Walking, Orange Juice, Chicken, Salad."
+        />
       </div>
     </form>
   );
