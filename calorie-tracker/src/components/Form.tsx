@@ -1,9 +1,10 @@
 import { useState, ChangeEvent } from "react";
+import { Activity } from "../types";
 import { categories } from "../data/categories";
 
 export default function Form() {
-  const [activity, setActivity] = useState({
-    category: "",
+  const [activity, setActivity] = useState<Activity>({
+    category: 1,
     name: "",
     calories: 0,
   });
