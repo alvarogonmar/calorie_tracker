@@ -16,6 +16,7 @@ export default function Form() {
         <select
           className="border border-slate-300 p-2 rounded-lg w-full bg-white"
           id="category"
+          value={activity.category}
         >
           {categories.map((category) => (
             <option key={category.id} value={category.id}>
@@ -34,6 +35,7 @@ export default function Form() {
           type="text"
           className="border border-slate-300 p-2 rounded-lg"
           placeholder="E.g. Running, Walking, Orange Juice, Chicken, Salad."
+          value={activity.name}
         />
       </div>
 
@@ -46,6 +48,7 @@ export default function Form() {
           type="number"
           className="border border-slate-300 p-2 rounded-lg"
           placeholder="E.g. 100, 200, 300."
+          value={activity.calories}
         />
       </div>
 
