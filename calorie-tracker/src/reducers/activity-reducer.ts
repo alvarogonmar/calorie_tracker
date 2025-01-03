@@ -21,4 +21,6 @@ export const activityReducer = (
         // Este codigo maneja la logica para actualizar el state
         console.log('desde el type de save')
     }
+    
+    return state
 }
