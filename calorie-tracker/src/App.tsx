@@ -20,6 +20,8 @@ function App() {
           <Form dispatch={dispatch} />
         </div>
       </section>
+
+      <section className="p-10 mx-auto max-w-4xl"></section>
     </>
   );
 }
