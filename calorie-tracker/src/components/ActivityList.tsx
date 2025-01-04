@@ -38,7 +38,11 @@ export default function ActivityList({ activities }: ActivityListProps) {
             </p>
           </div>
 
-          <div></div>
+          <div className="flex gap-5 items-center">
+            <button>
+              <PencilSquareIcon className="h-8 w-8 text-gray-800" />
+            </button>
+          </div>
         </div>
       ))}
     </>
