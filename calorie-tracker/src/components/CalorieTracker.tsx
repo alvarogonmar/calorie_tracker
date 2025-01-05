@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { Activity } from "../types";
 import CalorieDisplay from "./CalorieDisplay";
+import { ExclamationTriangleIcon } from "@heroicons/react/24/outline"; // Example import from Heroicons
 
 type CalorieTrackerProps = {
   activities: Activity[];
@@ -31,6 +32,7 @@ export default function CalorieTracker({ activities }: CalorieTrackerProps) {
     () => caloriesConsumed - caloriesBurned,
     [activities]
   );
+  const excessCalories = useMemo(() => netCalories > 0, [netCalories]);
 
   return (
     <>
@@ -42,6 +44,12 @@ export default function CalorieTracker({ activities }: CalorieTrackerProps) {
         <CalorieDisplay calories={caloriesBurned} text="Burned" />
         <CalorieDisplay calories={netCalories} text="Net" />
       </div>
+      {excessCalories && (
+        <div className="flex items-center justify-center mt-5">
+          <ExclamationTriangleIcon className="h-6 w-6 text-red-500 inline-block mr-2" />
+          <span className="text-red-500 font-bold">Excess Calories!</span>
+        </div>
+      )}
     </>
   );
 }
