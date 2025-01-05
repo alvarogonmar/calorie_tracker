@@ -24,3 +24,5 @@ A dynamic web application to help users track their calorie intake and expenditu
 2. View the total calories consumed, burned, and net calories.
 3. Edit or delete activities as needed.
 4. Warnings will be displayed for high-calorie foods and excess net calories.
+
+[Check out the app here](https://caloriestrackerr.netlify.app/)
