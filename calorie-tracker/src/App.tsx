@@ -37,6 +37,10 @@ function App() {
         </div>
       </section>
 
+      <section className="bg-gray-800 py-10">
+        <div className="max-w-4xl mx-auto"></div>
+      </section>
+
       <section className="p-10 mx-auto max-w-4xl">
         <ActivityList activities={state.activities} dispatch={dispatch} />
       </section>
