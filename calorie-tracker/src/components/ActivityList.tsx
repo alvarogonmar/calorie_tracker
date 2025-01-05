@@ -53,12 +53,13 @@ export default function ActivityList({
 
             <div className="flex gap-5 items-center">
               <button
-                onClick={() =>
+                onClick={() => {
                   dispatch({
                     type: "set-activeId",
                     payload: { id: activity.id },
-                  })
-                }
+                  });
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
               >
                 <PencilSquareIcon className="h-8 w-8 text-gray-800" />
               </button>
