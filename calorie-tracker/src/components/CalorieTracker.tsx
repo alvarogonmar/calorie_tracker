@@ -1,3 +1,5 @@
+import { Activity } from "../types";
+
 type CalorieTrackerProps = {
   activities: Activity[];
 };
